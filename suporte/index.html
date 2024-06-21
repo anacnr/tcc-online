@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <!--Maior tela-->
+    <link rel="stylesheet" href="../css/index-suporte/desktop.css">
+    <!--Menor tela-->
+    <link rel="stylesheet" href="../css/index-suporte/mobile.css">
+</head>
+<body>
+    <h1>Àrea do suporte</h1>
+    <div id="container">
+        <h2>Principais notificações</h2>
+        <!--colocar um id para chamar o nome e o email no input da tela de suporte-->
+        <a href="message.html"><button id="Maria das Dores" onclick="capturarId(this.id)">Maria das Dores</button></a> <br>
+        <a href="message.html"><button id="Cleber dos Santos"onclick="capturarId(this.id)">Cleber dos Santos</button></a> <br>
+        <a href="message.html"><button id="Gloria Groover"onclick="capturarId(this.id)">Gloria Groover</button></a> <br>
+        <a href="message.html"><button id="Hanna Montana"onclick="capturarId(this.id)">Hanna Montana</button></a>
+        <!--<img src="bell-fill.svg" alt="">  imagem do sino -->
+    </div>
+    <script>
+        function capturarId(id) {
+            localStorage.setItem('botaoId', id);
+            window.location.href = 'telas.html';
+        }
+    </script>
+</body>
+</html>

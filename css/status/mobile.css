@@ -1,0 +1,173 @@
+@charset "UTF-08";
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 90%; height: 90%;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #ff3131, #ffd34d);
+    background-attachment: fixed;
+}
+
+:root{
+    --lyric : Arial, Helvetica, sans-serif;
+    --lyric_color_h1: rgba(255, 255, 255, 0.952);
+    --lyric_color_h2: rgb(28, 28, 33);
+    --p_color: rgb(245, 245, 245);
+    --p_font_size: 2dvi;
+}
+
+@media (max-width:600px){
+    
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: 1px 1px 3px black;
+        text-decoration-line: underline;
+        text-decoration-color:white;
+        text-decoration-style: dotted;
+        font-family: var(--lyric);
+        font-weight: 100;
+        font-size: 5dvi;
+        color: var(--lyric_color_h1) ;
+        transform: translateY(30vh);
+        
+    }
+
+    main > h2{
+        text-transform: capitalize;
+        text-shadow: 1px 1px 3px rgb(136, 113, 82);
+        font-family: var(--lyric);
+        font-weight: 100;
+        font-size: 5dvi;
+        color: var(--lyric_color_h2);
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+
+    main > #logo-market{
+        width: 40px; height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        filter: opacity(0.8);
+        box-shadow: 1px 2px 6px black;
+    }
+
+    main > div {
+        position: absolute;
+        transform: translate(0vw,35vh);
+        width: 100%; height: 40%;
+    }
+
+    main > div > label{
+        text-transform:  uppercase;
+    }
+
+    main > div > .hours{
+        font-size: var(--p_font_size);
+        font-family: var(--lyric);
+        color: var(--p_color);
+        text-shadow: 1px 2px 3px black;
+        cursor: context-menu;
+        position: absolute;
+        cursor: context-menu;
+    }
+
+    main > div > #id0{
+        transform: translate(70vw, -2vh);
+    }
+
+    main > div > #id1{
+        transform: translate(70vw, 6vh);
+    }
+
+    main > div > #id2{
+        transform: translate(70vw, 15vh);        
+    }
+
+    main > div > input{
+        cursor: pointer;
+    }
+
+    main > div > #check1[type="checkbox"]{
+        position: absolute;
+        top: 13%;
+        left: 15%;
+        width: 10px; height: 10px;
+        border-color: #ff3131;
+        border-width: 100px;
+        accent-color: rgb(44, 234, 44);  
+    }
+
+
+    main > div > #phrase-check1{
+        color: var(--p_color);
+        font-size: var(--p_font_size);
+        text-shadow: 1px 1px 3px  black;
+        word-spacing: 5px;
+        position: absolute;
+        transform: translate(20vw,5vh);
+    }
+
+    main > div > #check2[type="checkbox"]{
+        position: absolute;
+        top: 33%;
+        left: 15%;
+        width: 10px; height: 10px;
+        accent-color: rgb(44, 234, 44)
+    }
+
+    main > div > #phrase-check2{
+        color: var(--p_color);
+        font-size: var(--p_font_size);
+        text-shadow: 1px 1px 3px  black;
+        word-spacing: 5px;
+        position: absolute;
+        transform: translate(20vw,10vh);
+    }
+
+    main > div > #check3[type="checkbox"]{
+        position: absolute;
+        top: 54%;
+        left: 15%;
+        width: 10px; height: 10px;
+        accent-color: rgb(44, 234, 44)
+    }
+
+    main > div > #phrase-check3{
+        color: var(--p_color);
+        font-size: var(--p_font_size);
+        text-shadow: 1px 1px 3px  black;
+        word-spacing: 5px;
+        position: absolute;
+        transform: translate(20vw,15vh);
+    }
+
+    button{
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        padding: 2px 4px 2px 4px;
+        font-family: var(---p_font_size);
+        font-weight: 100;
+        text-transform: capitalize;
+        background-color: rgb(122, 223, 223);
+        border: 0px;
+        border-radius: 8px;
+        box-shadow: 2px 3px 10px black;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: rgb(209, 188, 239);
+    }
+}

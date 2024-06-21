@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0px;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #ff3131, #ffd34d);
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 5dvw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    background-color: rgb(252, 219, 209);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    margin: auto;
+    display: block;
+    width: 60vw;
+    height:36vh;
+    position: relative;
+    top: 35%;
+    box-shadow: 2px 1px 10px rgb(10, 10, 10);
+}
+
+/*Personalização dos botões*/
+div > #first{
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 35%;
+    width: 50%;
+    height: 15%;
+}
+
+div > #second{
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    height: 15%;
+}
+
+/*Acesso dos links*/
+div > button > #vendedor, #comprador{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(2, 2, 2);
+    font-size: 2.5dvw;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 900;
+}
+
+/*Ícones do supermercado e do cliente*/
+
+div > #supermercado{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(25vw,3vh);
+    border-radius: 50%;
+}
+
+div > #cliente{
+    width: 3vw;
+    position: absolute;
+    transform: translate(28vw,14vh);
+}

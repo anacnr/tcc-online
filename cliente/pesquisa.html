@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartlist-pesquisa</title>
+    <!--Tela maior-->  
+    <link rel="stylesheet" href="../css/pesquisa/desktop.css">
+    <!--Tela menor-->
+    <link rel="stylesheet" href="../css/pesquisa/mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="../imagens/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <img src="buttons/cart-fill.svg" alt="carrinho" id="product">
+
+    <div id="search">
+        <form action="../php/pesquisa.php" method="post">
+            <span id="span-input"><input type="text" name="input" placeholder="Pão de queijo"><i class="bi bi-search" id="icon-butt"></i></span>
+        </form>
+    </div>
+
+    <div id="message">
+        <!--Orientações para a pesquisa-->
+        <p id="first-phrase">Você pode pesquisar por uma marca ou algum produto.</p>
+        <p id="second-phrase">Fique á vontade!</p>
+    </div>
+    
+    <script src="../javascript/jquery-3.7.1.min.js"></script>
+    <script src="../javascript/search.js"></script>
+</body>
+</html>

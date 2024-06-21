@@ -1,0 +1,16 @@
+Cliente login
+
+e: cliente@email.com
+s:90g&!151
+
+
+Suporte login
+
+e: suporte@email.com
+s:vvb%$011 
+
+
+Supermercado login
+
+e: supermarket@email.com
+s: abc12345

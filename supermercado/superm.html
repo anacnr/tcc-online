@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt -Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cadastro do supermercado</title>
+    <!--Tela maior-->
+    <link rel="stylesheet" href="../css/cad-vendedor/desktop.css"/>
+    <!--Tela menor-->
+    <link
+      rel="stylesheet" href="../css/cad-vendedor/mobile.css" media="(max-width: 600px)" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="shortcut icon" href="../imagens/icons/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <h1>Cadastro da empresa</h1>
+
+    <form method="post" action="../php/superm.php" enctype="multipart/form-data">
+      <ul>
+        <li>
+          <i class="bi bi-building" id="company"></i>
+          <label for="cliente" id="empresa">Empresa:</label>
+          <input
+            type="text"
+            name="empresa"
+            id="cliente"
+            placeholder="Empresa"
+            maxlength="20"
+            required
+          />
+        </li>
+
+        <li>
+          <i class="bi bi-person-square" id="worker"></i>
+          <label for="responsavel" id="funcionario">Nome do responsável:</label>
+     
+          <input
+            type="text"
+            name="responsavel"
+            id="responsavel"
+            placeholder="Nome do responsável"
+            maxlength="50"
+            required
+          />
+        </li>
+
+        <li>
+          <i class="bi bi-person-square" id="cnpj"></i>
+          <label for="unico" id="registro">CNPJ:</label>
+          <input
+            type="text"
+            name="cnpj"
+            id="unico"
+            placeholder="CNPJ"
+            maxlength="18"
+            required
+          />
+        </li>
+
+        <li>
+          <i class="bi bi-geo-alt" id="address"></i>
+          <label for="local" id="localizacao">Localização:</label>
+          <input
+            type="text"
+            name="localizacao"
+            id="local"
+            placeholder="Localização"
+            maxlength="20"
+            required
+          />
+        </li>
+
+        <li>
+          <i class="bi bi-telephone" id="telephone"></i>
+          <label for="fixo" id="tel-fixo">Telefone - Fixo:</label>
+          <input
+            type="tel"
+            name="telfixo"
+            id="fixo"
+            placeholder="Fixo"
+            maxlength="10"
+          />
+        </li>
+
+        <li>
+          <img
+            src="imgs-cad/smartphone_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="telefone-movel"
+            id="phone"
+          />
+          <label for="pessoal" id="tel-cel">Celular:</label>
+          <input
+            type="tel"
+            name="celular"
+            id="movel"
+            placeholder="Móvel"
+            maxlength="11"
+            required
+          />
+        </li>
+
+        <li>
+          <i class="bi bi-envelope" id="email"></i>
+          <label for="endereco" id="e-mail">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="end"
+            placeholder="E-mail"
+            maxlength="50"
+            required
+          />
+        </li>
+
+        <li>
+          <i class="bi bi-lock" id="pass"></i>
+          <label for="valido" id="senha">Senha:</label>
+          <input
+            type="password"
+            name="senha"
+            id="valido"
+            placeholder="Senha"
+            minlength="8"
+            required
+          />
+        </li>
+
+        <li>
+          <label for="foto" id="descricao" onclick="Generator()"><i class="bi bi-upload"></i></label>
+          <input type="file" id="foto" name="img" accept="image/*"/>
+        </li>
+      </ul>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <abbr title="Login"><i class="bi bi-building-fill-check"></i></abbr>
+
+    <!--Javascript-->
+    <script>
+      //Configurar a foto do input file depois da imagem ter sido escolhida
+      function Generator() {
+        //Input invísivel
+        let input = document.getElementById("foto");
+
+        input.addEventListener("change", function () {
+          //Remove o ícone
+          document.querySelector('.bi-upload').style.display = 'none'
+          //Label
+          let label = document.getElementById("descricao");
+          //Aqui o código vai ler o arquivo
+          let eyes = new FileReader();
+          //Evento onload serve para a imagem carregada
+          eyes.onload = function read() {
+            //Nesse trecho está a definição da imagem que vai ocupar o fundo da label. Eu vi essa dica em um comentário.
+            label.style.backgroundImage = `url('${eyes.result}')`;
+            label.style.backgroundSize = "cover";
+            label.style.backgroundPosition = 'center'
+          };
+          //Isso serve para pegar a url da imagem
+          eyes.readAsDataURL(input.files[0]);
+        });
+      }
+
+        //Criação de condicional para verificar os campos estão preenchidos. Eu vi essa técnica pela internet. Pois a seleção dos inputs são como um array.
+        document.querySelectorAll('input').forEach(element =>{
+          if(element.value.length <1){
+            //Deixa o botão inacessível
+            document.querySelector('button').addEventListener("click", ()=>{
+            this.disabled = true
+            console.log(this.disabled);
+          })
+          }
+          else{
+            document.querySelector('button').addEventListener("click", ()=>{
+            this.disabled = false
+            console.log(this.disabled);
+            setTimeout(()=>{
+            location.href = 'supermercado/index.html'
+          })
+          })
+          }    
+      })
+
+      document.querySelector('.bi-building-fill-check').addEventListener("click" , ()=>{
+        setTimeout(()=>{
+          location.href = '../login.html'
+        },500)
+      })
+    </script>
+  </body>
+</html>

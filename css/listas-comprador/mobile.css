@@ -1,0 +1,199 @@
+@charset "UTF-08";
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font_family : "Poppins", sans-serif;
+    --font_color: rgb(4, 4, 97);
+    --font_size: 4dvi;
+    --total_back: linear-gradient(120deg, rgba(253, 237, 58, 0.808) 65%,rgba(77, 224, 185, 0.808));
+    --backgound_color: radial-gradient(circle, rgba(240, 250, 240, 0.521), rgba(252, 212, 239, 0.644));
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgound_color);
+}
+
+footer{
+    height: 100px;
+}
+
+@media (max-width:600px) {
+
+    h1{
+        text-align: center;
+        font-family: var(--font_family);
+        color: var(--font_color);
+        margin-top: 10%;
+        font-size: var(--font_size);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        cursor: context-menu;
+    }
+
+    #div-list{
+        width: 100%;
+        height: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #div-list > table{
+        border-collapse: collapse;
+        width: 70%;
+        height: 60%;
+        margin: auto;
+        position: relative;
+        transform: translateY(5vh);
+    }
+
+    table > thead{
+        height:25px;
+        box-shadow: 1px 2px 5px black;
+        border-radius: 4px;
+        background-color: pink;
+    }
+
+    thead > tr > th{
+        border-left: 1px solid black;
+        font-family: var(--font_family);
+        color: var(--font_color);
+        font-size: 0.5em;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        cursor: context-menu;
+    }
+
+    thead > tr >#th-nome{
+        border-left: 0px solid black;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    thead > tr > #th-img{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    table > tbody > tr{
+        background-color: rgba(0, 0, 0, 0.753);
+        position: relative;
+        transform: translateY(5vh);
+        box-shadow: 2px 2px 8px black;
+        border-radius: 4px;
+    }
+
+    tbody > tr > td{
+        font-family: var(--font_family);
+        color: white;
+        font-size: 1.5dvi;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 8px;
+        cursor: context-menu;
+    }
+
+    tbody > tr > td > img{
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        box-shadow: 2px;
+    }
+
+    tbody > tr > #td0{
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;        
+    }
+
+    tbody > tr > #td4{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    #div-list > #total-span{
+        position: absolute;
+        transform: translate(42vw,20vh);
+        font-family: var(--font_family);
+        font-size: 1.8dvi;
+        font-weight: 600;
+        background-image: var(--total_back);
+        padding: 3px;
+        border-radius: 6%;
+        box-shadow: 1px 1px 2px black;
+        cursor: context-menu;
+        opacity: 0.9;
+    }
+
+    button{
+        margin: auto;
+        display: inline;
+        transform: translate(38vw,23vh);
+        border-top: none;
+        border-right: none;
+        background-image: radial-gradient(rgba(78, 232, 35, 0.559),rgba(6, 240, 84, 0.71));
+        border-left: none;
+        border-bottom: 1px solid rgba(35, 6, 142, 0.82);
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 7%;
+        box-shadow: 1px 2px 5px black;
+        font-size: 1.8dvi;
+        font-weight: 600;
+    }
+
+    /*Botão de cancelar*/
+     #sav{
+            margin-right: 10px;
+    }
+
+    /*Botão de cancelar*/
+    #can{
+        background-image: linear-gradient(65deg,rgba(255, 0, 242, 0.737),rgba(235, 22, 72, 0.888));
+        color: rgb(219, 219, 212);
+        text-shadow: 1px 1px 3px black;
+        margin-left: 10px;
+    }
+
+    .span-supermarkets{
+        text-align: center;
+        display: block;
+        margin: auto;
+        transform: translateY(-1vh);
+        background-image: linear-gradient(120deg,rgba(239, 153, 25, 0.824)25%,rgba(242, 8, 78, 0.897)50%);
+        font-family: var(--font_family);
+        font-size: 1.7dvi;
+        padding: 3px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.774);
+        text-shadow: 1px 1px 4px black;
+        margin-bottom: 5px;
+        width: 60%;
+        border-radius: 9px;
+        box-shadow: 2px 2px 5px rgb(109, 109, 109);
+    }
+
+    abbr > #supermarket{
+        position: absolute;
+        top: 10%;
+        left: 89%;
+        width: 3dvi;
+        cursor: pointer;
+    }
+
+    abbr > #product{
+        position: relative;
+        top: 3%;
+        left: 89%;
+        width: 3dvi;
+        cursor: pointer;
+    }
+}

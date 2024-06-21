@@ -1,0 +1,466 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Configurações para tela maior */
+/*Esse é o seletor universal do código, todos recebem inicialmente essa configuração*/
+*{
+    margin: 0%;
+    padding: 0px;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #ff3131, #ffd34d);
+    background-attachment: fixed;
+}
+
+@media (min-width:600px) and (max-width: 768px){
+
+    form > ul > li{
+            list-style: none;
+        }
+        
+    /*Esses são os campos onde vão receber os dados*/    
+    form > ul > li > input{
+            width: 40%;
+            height: 25px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 0%;
+            margin-bottom: 10%;
+            border-radius: 25px;
+            border-style: solid;
+            border-width: 0px;
+            box-shadow: 2px 2px 6px black;
+            font-size: 0.9em;
+            font-style: oblique;
+            font-weight: 600;
+        }
+
+        h1{
+            font-family: 'Poppins';
+            text-align: center;
+            margin-top: 73px;
+        }
+            
+    /*Primeiro campo que recebe o dado (nome)*/
+    form > ul > li > #cliente{
+        margin-top: 7%;    
+        }
+
+    /*Último campo que recebe o dado (senha)*/
+    form > ul > li > #valido{
+        margin-bottom: 10%;    
+        }
+
+    /*O placeholder é o que está escrito dentro dos campos*/
+    form > ul > li > input::placeholder{
+        color: black;
+        }
+
+    /*Configurações do botão de cadastro*/
+    form > button{
+        margin: auto;
+        display: block;
+        width: 200px;
+        height: 30px;
+        border-style: solid;
+        border-width: 0px;
+        box-shadow: 2px 2px 6px black;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 0.9em;
+        cursor: pointer;
+        background-color: rgba(186, 91, 230, 0.772);
+        color: rgb(245, 243, 240);
+        letter-spacing: 2px;
+        }
+
+    form > ul > li > label{
+        display: none;
+        }
+
+    /*Configurações dos ícones dos campos*/
+
+    form > ul > li > #user, #cpf{
+        font-size: 16px;
+        position: absolute;
+        transform: translate(25vw,1vh);
+    }
+
+    form > ul > li > #cell{
+        width: 24px;
+        position: absolute;
+        transform: translate(24vw,0vh);
+    }
+
+    form > ul > li > #house{
+        font-size: 16px;
+        position: absolute;
+        transform: translate(24vw,0vh);
+    }
+
+    form > ul > li > #email{
+    font-size: 16px;
+        position: absolute;
+        transform: translate(24vw,1vh);
+    }
+
+    form > ul > li > #password{
+    font-size: 16px;
+        position: absolute;
+        transform: translate(24vw,1vh);
+        filter: brightness(0);
+    }
+}
+ @media (min-width:768px) and (max-width: 992px){
+
+    form{
+        background-color: rgba(255, 255, 255, 0.909);
+        width: 600px;
+        height: 500px;
+        border-width: 0px;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        transform: translateY(15vh);
+    }
+
+    form > h1{
+        font-family: 'Poppins';
+        text-align: center;
+    }    
+
+    form > ul{
+        position: absolute;
+        width: 100%;
+        top: 5%;
+    }
+
+    form > ul > li{
+        list-style: none;
+    }
+
+    form > ul > li > input{
+        width: 290px;
+        height: 25px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 0px;
+        box-shadow: 2px 2px 6px black;
+        font-size: 0.8em;
+        font-style: oblique;
+        font-weight: 600;
+    } 
+        
+    form > ul > li > input::placeholder{
+            color: black;
+    }
+
+    form > ul > li > #cliente,#valido, #end,#local,#contato,#unico{
+            margin-top: 30px;    
+        }    
+            
+    form > button{
+            position: absolute;
+            display: block;
+            width: 170px;
+            height: 30px;
+            border-style: solid;
+            border-width: 0px;
+            box-shadow: 2px 2px 6px black;
+            border-radius: 25px;
+            font-weight: 600;
+            transform: translate(215px,350px);
+            margin-top: 2%;
+            cursor: pointer;
+            background-color: rgba(186, 91, 230, 0.772);
+            color: rgb(245, 243, 240);
+            letter-spacing: 2px;
+        }
+            
+    input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        
+    input::placeholder{
+            opacity: 100%;
+        }
+
+    form > ul > li > #user{
+        font-size: 16px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #cpf{
+            width: 20px;
+            position: absolute;
+            transform: translate(120px,1px);
+        }
+
+    form > ul > li > #cell{
+        width: 22px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #house{
+        width: 24px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #email{
+        width: 25px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #password{
+        width: 24px;
+        height: 20px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }    
+    
+}
+@media (min-width:992px) and (max-width:1200px){
+
+    form{
+        background-color: rgba(255, 255, 255, 0.909);
+        width: 650px;
+        height: 500px;
+        display: block;
+        margin: auto;
+        transform: translateY(15vh);
+        border-width: 0px;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 5px;
+    }
+
+    form > h1{
+        font-family: 'Poppins';
+        text-align: center;
+    }    
+
+    form > ul{
+        position: absolute;
+        width: 100%;
+        top: 5%;
+    }
+
+    form > ul > li{
+        list-style: none;
+    }
+
+    form > ul > li > input{
+        width: 290px;
+        height: 25px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 0px;
+        box-shadow: 2px 2px 6px black;
+        font-size: 0.8em;
+        font-style: oblique;
+        font-weight: 600;
+    } 
+        
+    form > ul > li > input::placeholder{
+            color: black;
+    }
+
+    form > ul > li > #cliente,#valido, #end,#local,#contato,#unico{
+            margin-top: 30px;    
+        }    
+            
+    form > button{
+            position: absolute;
+            display: block;
+            width: 170px;
+            height: 30px;
+            border-style: solid;
+            border-width: 0px;
+            box-shadow: 2px 2px 6px black;
+            border-radius: 25px;
+            font-weight: 600;
+            transform: translate(230px,350px);
+            margin-top: 2%;
+            background-color: rgba(186, 91, 230, 0.772);
+            color: rgb(245, 243, 240);
+            letter-spacing: 2px;
+        }
+            
+    input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        
+    input::placeholder{
+            opacity: 100%;
+        }
+
+    form > ul > li > #user{
+        font-size: 18px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #cpf{
+        font-size: 18px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #cell{
+        width: 22px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #house{
+       font-size: 20px;;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #email{
+        font-size: 20px;
+        position: absolute;
+        transform: translate(120px,1px);
+        }
+
+    form > ul > li > #password{
+        font-size: 20px;
+        position: absolute;
+        transform: translate(120px,1px);
+        
+}
+}
+@media(min-width:1200px){
+ 
+    form{
+        background-color: rgba(255, 255, 255, 0.909);
+        width: 750px;
+        height: 500px;
+        display: block;
+        margin: auto;
+        transform: translateY(15vh);
+        border-width: 0px;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 5px;
+    }
+
+    form > h1{
+        font-family: 'Poppins';
+        text-align: center;
+    }   
+
+    form > ul{
+        position: absolute;
+        width: 100%;
+        top: 5%;
+    }
+
+    form > ul > li{
+        list-style: none;
+    }
+
+    form > ul > li > input{
+        width: 290px;
+        height: 25px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 0px;
+        box-shadow: 2px 2px 6px black;
+        font-size: 0.8em;
+        font-style: oblique;
+        font-weight: 600;
+    } 
+        
+    form > ul > li > input::placeholder{
+            color: black;
+    }
+
+    form > ul > li > #cliente,#valido, #end,#local,#contato,#unico{
+            margin-top: 30px;    
+        }    
+            
+    form > button{
+            position: absolute;
+            display: block;
+            width: 170px;
+            height: 30px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 25px;
+            border-width: 0px;
+            box-shadow: 2px 2px 6px black;
+            font-weight: 600;
+            transform: translate(300px,350px);
+            margin-top: 2%;
+            cursor: pointer;
+            background-color: rgba(186, 91, 230, 0.772);
+            color: rgb(245, 243, 240);
+            letter-spacing: 2px;
+        }
+            
+    input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        
+    input::placeholder{
+            opacity: 100%;
+        }
+
+    form > ul > li > #user{
+        font-size: 18px;
+        position: absolute;
+        transform: translate(190px,1px);
+        }
+
+    form > ul > li > #cpf{
+        font-size: 18px;
+        position: absolute;
+        transform: translate(190px,1px);
+        }
+
+    form > ul > li > #cell{
+        width: 22px;
+        position: absolute;
+        transform: translate(190px,1px);
+        }
+
+    form > ul > li > #house{
+       font-size: 20px;;
+        position: absolute;
+        transform: translate(190px,1px);
+        }
+
+    form > ul > li > #email{
+        font-size: 20px;
+        position: absolute;
+        transform: translate(190px,1px);
+        }
+
+    form > ul > li > #password{
+        font-size: 20px;
+        position: absolute;
+        transform: translate(190px,1px);}    
+}

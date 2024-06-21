@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0px;
+}
+
+body,html{
+width: 99vw;
+height: 90vh;
+box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #ff3131, #ffd34d);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width:600px) and (max-width: 768px){
+
+    h1{
+    text-align: center;
+    position: relative;
+    top: 33%;
+    font-size: 2em;
+    }
+
+    div{
+        background-color: rgb(252, 219, 209);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        margin: auto;
+        display: block;
+        width: 57vw;
+        height:38vh;
+        position: relative;
+        top: 38%;
+        box-shadow: 2px 1px 10px rgb(10, 10, 10);
+    }
+
+    div > #first{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 35%;
+        width: 50%;
+        height: 15%;
+    }
+
+    div > #second{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 50%;
+        width: 50%;
+        height: 15%;
+    }
+
+    /*Acesso dos links*/
+    div > button > #vendedor, #comprador{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(2, 2, 2);
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 900;
+    }
+
+    /*Configurações das imagens*/
+
+    div > #supermercado{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    transform: translate(25vw,4vh);
+    border-radius: 50%;
+    }
+
+    div > #cliente{
+    width: 20px;
+    position: absolute;
+    transform: translate(28vw,14vh);
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px){
+    h1{
+        text-align: center;
+        position: relative;
+        top: 33%;
+        font-size: 2em;
+    }
+
+    div{
+        background-color: rgb(252, 219, 209);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        margin: auto;
+        display: block;
+        width: 440px;
+        height:38vh;
+        position: relative;
+        top: 38%;
+        box-shadow: 2px 1px 10px rgb(10, 10, 10);
+    }
+
+    div > #first{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 35%;
+        width: 200px;
+        height: 15%;
+    }
+
+    div > #second{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 50%;
+        width: 200px;
+        height: 15%;
+    }
+
+    /*Acesso dos links*/
+    div > button > #vendedor, #comprador{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(2, 2, 2);
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    }
+
+    /*Configurações das imagens*/
+
+    div > #supermercado{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: translate(180px,14px);
+        border-radius: 50%;
+    }
+
+    div > #cliente{
+        width: 20px;
+        position: absolute;
+        transform: translate(205px,80px);
+    }
+}
+
+@media (min-width:992px) and (max-width: 1200px){
+    h1{
+        text-align: center;
+        position: relative;
+        top: 33%;
+        font-size: 2.2em;
+    }
+
+    div{
+        background-color: rgb(252, 219, 209);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        margin: auto;
+        display: block;
+        width: 440px;
+        height:38vh;
+        position: relative;
+        top: 38%;
+        box-shadow: 2px 1px 10px rgb(10, 10, 10);
+    }
+
+    div > #first{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 35%;
+        width: 200px;
+        height: 15%;
+    }
+
+    div > #second{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 50%;
+        width: 200px;
+        height: 15%;
+    }
+
+    /*Acesso dos links*/
+    div > button > #vendedor, #comprador{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(2, 2, 2);
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    }
+
+    /*Configurações das imagens*/
+
+    div > #supermercado{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: translate(180px,14px);
+        border-radius: 50%;
+    }
+
+    div > #cliente{
+        width: 20px;
+        position: absolute;
+        transform: translate(205px,80px);
+    }
+}
+
+@media (min-width: 1200px){
+    h1{
+        text-align: center;
+        position: relative;
+        top: 33%;
+        font-size: 2.2em;
+    }
+
+    div{
+        background-color: rgb(252, 219, 209);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        margin: auto;
+        display: block;
+        width: 440px;
+        height:38vh;
+        position: relative;
+        top: 38%;
+        box-shadow: 2px 1px 10px rgb(10, 10, 10);
+    }
+
+    div > #first{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 35%;
+        width: 200px;
+        height: 14%;
+    }
+
+    div > #second{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 50%;
+        width: 200px;
+        height: 14%;
+    }
+
+    /*Acesso dos links*/
+    div > button > #vendedor, #comprador{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(2, 2, 2);
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    }
+
+    /*Configurações das imagens*/
+    div > #supermercado{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: translate(180px,14px);
+        border-radius: 50%;
+    }
+
+    div > #cliente{
+        width: 20px;
+        position: absolute;
+        transform: translate(205px,80px);
+    }
+}

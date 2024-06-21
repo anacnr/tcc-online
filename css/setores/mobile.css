@@ -1,0 +1,73 @@
+@charset "UTF-08";
+* {
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #ff3131, #ffd34d);
+  background-attachment: fixed;
+}
+
+/*Variável para a fonte*/
+:root {
+  --lyric: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .setor {
+    width: 100px;
+    display: block;
+    transform: translateY(10vh);
+    border-radius: 7px;
+    border-width: 0px;
+    box-shadow: 3px 2px 9px black;
+    background-color: white;
+    text-transform: capitalize;
+    padding: 3px;
+    margin: auto;
+    margin-right: 50%;
+    font-family: var(--lyric);
+    font-weight: 500;
+    font-size: 2.5dvi;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .span_icons {
+    /*border: 2px solid black;*/
+    position: relative;
+    top: 7%;
+    left: 55%;
+  }
+
+  .icon-edit {
+    cursor: pointer;
+    width: 3.5dvw;
+    margin: 1px 4px 0px 2px;
+  }
+
+  .icon-delete {
+    cursor: pointer;
+    width: 3.5dvw;
+    margin: 1px 4px 0px 15px;
+  }
+
+  .icon-save {
+    cursor: pointer;
+    width: 3.5dvw;
+    margin: 1px 4px 0px 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+}

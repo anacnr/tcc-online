@@ -1,0 +1,74 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family: Arial, Helvetica, sans-serif;
+    --background-color: linear-gradient(to left, #ffbf318f, #ffd34d);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: var(--background-color);
+    background-attachment: fixed;
+    cursor: context-menu;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+@media(max-width:600px){
+
+    h1{
+        font-family: arial;
+        font-size: 5dvi;
+        color: #ffffff;
+        position: relative;
+        left: 20%;
+        bottom: 25%;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    #container > h2{
+        font-family: var(--font-family);
+        color: #ffffff;
+        font-size: 3dvi;
+        text-shadow: 1px 1px 2px black;
+        padding: 5px;
+    }
+
+    /*Mensagens da notificações*/
+    #container{
+        transform: translate(-20vw, 5vh);
+        padding: 10px;
+        background-color: rgba(125, 48, 142, 0.429);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    #container > a > button{
+        margin-bottom: 10px; /* Espaço entre os botões */
+        background-color: transparent;
+        padding: 8px 16px;
+        color: #ffffff; /* Cor do texto do botão */
+        font-weight: 600;
+        border: 3px;
+        border-color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+    }
+}

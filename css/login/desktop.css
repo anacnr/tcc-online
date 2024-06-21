@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, #ff3131, #ffd34d);
+    background-attachment: fixed;
+  }
+
+form > button{
+    cursor: pointer;
+}
+
+:root{
+  --lyric: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+  form {
+    position: relative;
+    top: 167px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.909);
+    box-shadow: 2px 1px 10px black;
+    border-radius: 3px;
+    height: 50vh;
+    width: 85vw;
+  }
+
+  form > ul > li {
+    list-style: none;
+  }
+
+  form > ul {
+    position: relative;
+    margin: auto;
+    top: 35%;
+    width: 50vw;
+    height: 10vh;
+  }
+  /*Configurações dos ícones*/
+
+  form > ul > li > #email-icon {
+    font-size: 18px;
+    position: absolute;
+    transform: translate(-9vw,1vh);
+  }
+
+  form > ul > li > #lock-icon {
+    font-size: 18px;
+    position: absolute;
+    transform: translate(-9vw,6vh);
+  }
+
+  /*Esses são os campos onde vão receber os dados*/
+
+  form > ul > li > input {
+    width: 100%;
+    height: 12px;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    border-width: 0px;
+    box-shadow: 2px 1px 4px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    right: 8%;
+  }
+
+  form > ul > li > input::placeholder {
+    color: rgba(39, 39, 149, 0.94);
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: var(--lyric);
+  }
+
+  form > ul > li > #email {
+    margin-bottom: 15px;
+  }
+
+  form > ul > li > #senha {
+    margin-top: 35px;
+  }
+
+  form > button {
+    width: 20%;
+    height: 7%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.623);
+    border-radius: 25px;
+    font-size: 2dvw;
+    font-weight: 400;
+    position: relative;
+    transform: translate(22vw, 30vh);
+    cursor: pointer;
+  }
+
+  /*Botão de cadastro*/
+  form > #cad {
+    margin-left: 5%;
+  }
+
+  .advice{
+    width: 300px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    transform: translateY(25vh);
+    box-shadow: 0px -1px 6px black inset;
+    background-color: rgb(237, 243, 239);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    /*Animação*/
+    animation-name: alert;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; 
+
+    /*Mensagem*/
+    color: rgb(10, 10, 10);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--lyric);
+    cursor: context-menu;
+}
+
+@keyframes alert {
+    from{
+        opacity: 0%;     
+    }
+    to{
+        opacity: 100%;     
+    }
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  form {
+    margin: auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.909);
+    box-shadow: 2px 1px 10px black;
+    border-radius: 3px;
+    width: 650px;
+    height: 350px;
+    transform: translateY(24vh);
+  }
+
+  form > ul > li {
+    list-style: none;
+  }
+
+  form > ul {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+  }
+  /*Configurações dos ícones*/
+
+  form > ul > li > #email-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(40px, 100px)
+  }
+
+  form > ul > li > #lock-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(40px, 100px);
+  }
+
+  /*Esses são os campos onde vão receber os dados*/
+
+  form > ul > li > input {
+    width: 400px;
+    height: 1px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-width: 0px;
+    box-shadow: 2px 1px 4px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    transform: translate(70px,60px);
+  }
+
+  form > ul > li > input::placeholder {
+    color: rgba(39, 39, 149, 0.94);
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: var(--lyric);
+  }
+
+  form > ul > li > #email {
+    margin-top: 35px;
+  }
+
+  form > ul > li > #senha {
+    margin-top: 35px;
+  }
+
+  form > button {
+    width: 130px;
+    height: 27px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.623);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+  }
+
+  form > #ent{
+    transform: translate(150px,220px);
+  }
+
+  /*Botão de cadastro*/
+  form > #cad {
+    margin-left: 25px;
+    transform: translate(200px,220px);
+  }
+
+  .advice{
+    width: 300px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    transform: translateY(25vh);
+    box-shadow: 0px -1px 6px black inset;
+    background-color: rgb(237, 243, 239);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    /*Animação*/
+    animation-name: alert;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; 
+
+    /*Mensagem*/
+    color: rgb(10, 10, 10);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--lyric);
+    cursor: context-menu;
+}
+
+@keyframes alert {
+    from{
+        opacity: 0%;     
+    }
+    to{
+        opacity: 100%;     
+    }
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  form {
+    margin: auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.909);
+    box-shadow: 2px 1px 10px black;
+    border-radius: 3px;
+    width: 650px;
+    height: 350px;
+    transform: translateY(24vh);
+  }
+
+  form > ul > li {
+    list-style: none;
+  }
+
+  form > ul {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+  }
+  /*Configurações dos ícones*/
+
+  form > ul > li > #email-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(40px, 100px)
+  }
+
+  form > ul > li > #lock-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(40px, 100px);
+  }
+
+  /*Esses são os campos onde vão receber os dados*/
+
+  form > ul > li > input {
+    width: 400px;
+    height: 1px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-width: 0px;
+    box-shadow: 2px 1px 4px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    transform: translate(70px,60px);
+  }
+
+  form > ul > li > input::placeholder {
+    color: rgba(39, 39, 149, 0.94);
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: var(--lyric);
+  }
+
+  form > ul > li > #email {
+    margin-top: 35px;
+  }
+
+  form > ul > li > #senha {
+    margin-top: 35px;
+  }
+
+  form > button {
+    width: 130px;
+    height: 27px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.623);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+  }
+
+  form > #ent{
+    transform: translate(150px,220px);
+  }
+
+  /*Botão de cadastro*/
+  form > #cad {
+    margin-left: 25px;
+    transform: translate(200px,220px);
+  }
+
+  .advice{
+    width: 300px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    transform: translateY(25vh);
+    box-shadow: 0px -1px 6px black inset;
+    background-color: rgb(237, 243, 239);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    /*Animação*/
+    animation-name: alert;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; 
+
+    /*Mensagem*/
+    color: rgb(10, 10, 10);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--lyric);
+    cursor: context-menu;
+}
+
+@keyframes alert {
+    from{
+        opacity: 0%;     
+    }
+    to{
+        opacity: 100%;     
+    }
+}
+}
+
+@media (min-width: 1200px) {
+
+  form {
+    margin: auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.909);
+    box-shadow: 2px 1px 10px black;
+    border-radius: 3px;
+    width: 650px;
+    height: 350px;
+    transform: translateY(24vh);
+  }
+
+  form > ul > li {
+    list-style: none;
+  }
+
+  form > ul {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+  }
+  /*Configurações dos ícones*/
+
+  form > ul > li > #email-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(40px, 100px)
+  }
+
+  form > ul > li > #lock-icon {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(40px, 100px);
+  }
+
+  /*Esses são os campos onde vão receber os dados*/
+
+  form > ul > li > input {
+    width: 400px;
+    height: 1px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-width: 0px;
+    box-shadow: 2px 1px 4px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    transform: translate(70px,60px);
+  }
+
+  form > ul > li > input::placeholder {
+    color: rgba(39, 39, 149, 0.94);
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: var(--lyric);
+  }
+
+  form > ul > li > #email {
+    margin-top: 35px;
+  }
+
+  form > ul > li > #senha {
+    margin-top: 35px;
+  }
+
+  form > button {
+    width: 130px;
+    height: 27px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.623);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+  }
+
+  form > #ent{
+    transform: translate(150px,220px);
+  }
+
+  /*Botão de cadastro*/
+  form > #cad {
+    margin-left: 25px;
+    transform: translate(200px,220px);
+  }
+
+  .advice{
+    width: 300px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    transform: translateY(25vh);
+    box-shadow: 0px -1px 6px black inset;
+    background-color: rgb(237, 243, 239);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    /*Animação*/
+    animation-name: alert;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; 
+
+    /*Mensagem*/
+    color: rgb(10, 10, 10);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--lyric);
+    cursor: context-menu;
+}
+
+@keyframes alert {
+    from{
+        opacity: 0%;     
+    }
+    to{
+        opacity: 100%;     
+    }
+}
+}
