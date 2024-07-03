@@ -413,7 +413,7 @@ body,html{
         box-shadow: 2px 2px 4px grey;
         border-radius: 7px;
         width:500px;
-        height: 25%;
+        height: 160px;
         display: block;
         margin: auto;
         transform: translateY(20vh);  
@@ -425,7 +425,7 @@ body,html{
         font-size: 15px;
         color: rgb(4, 4, 97);
         cursor: context-menu;
-        transform: translate(7vw,5vh);
+        transform: translate(3vw,5vh);
         width: 400px;
     }
     /*Segunda frase*/
@@ -440,7 +440,7 @@ body,html{
         border-radius: 10px;
         display: block;
         margin: auto;
-        transform: translateY(10vh);
+        transform: translateY(12vh);
         padding: 5px;
         cursor: context-menu;
     }
