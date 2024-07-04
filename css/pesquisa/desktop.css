@@ -451,7 +451,7 @@ body,html{
         border-radius: 5px;
         box-shadow: 1px 1px 10px #876b6b;
         position: relative;
-        top: 10%;
+        top: 20%;
         margin-top: 20px;
         margin-left: 200px;
         left: 25%;
@@ -486,7 +486,7 @@ body,html{
     .results > .phrase-prod{
         text-align: left;
         font-family: var(--font);
-        font-size: 0.8em;
+        font-size: 0.9em;
         color: #6f1704fa;
         padding-left: 10%;
         margin-top: 23px;
@@ -504,15 +504,15 @@ body,html{
         background-color: #ffffffb5;
     }
 
-    .results > .button-card{
+    .results > abbr > .button-card{
         border-top: none;
         border-right: none;
         padding: 0px 5px 0px 6px;
         font-family: arial;
         font-size: 0.8em;
         position: absolute;
-        bottom: 76%;
-        left: 70%;
+        bottom: 7%;
+        left: 82%;
         cursor: pointer;
         border-left: none;
         border-radius: 12%;
@@ -520,15 +520,17 @@ body,html{
         background-color: transparent;
     }
 
-    .button-card:hover{
+    .results > abbr > .button-card:hover{
        background-color: rgba(255, 255, 255, 0.767);
     }
 
 
-    .results > .button-card > .bi-cart-plus{
-        border-radius: 3%;
-        font-size: 1.2em;     
-        cursor: pointer;  
+    abbr > .button-card > .bi-cart-plus{
+        z-index: 1;
+        font-size: 16px;
+        top: 45px;
+        left: 40px;
+        
     }
 
     #product{
